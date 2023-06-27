@@ -9,22 +9,19 @@ class NumberEighteen extends StatelessWidget {
         "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNob2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60";
     return Container(
       padding: const EdgeInsets.all(10),
-      height: 110,
-      color: Colors.blueGrey,
+      height: 120,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Image.network(url, width: 110),
-                const Text("Yesterday | 12:39pm",
-                    style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                        color: Color(0xff3C3C43)))
-              ]),
+          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Image.network(url, width: 110),
+            const SizedBox(height: 10),
+            const Text("Yesterday | 12:39pm",
+                style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                    color: Color(0xff3C3C43)))
+          ]),
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
