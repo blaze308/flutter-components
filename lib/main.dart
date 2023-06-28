@@ -3,7 +3,8 @@ import 'package:app/components/number_five.dart';
 import 'package:app/components/number_nineteen.dart';
 import 'package:app/components/number_six.dart';
 import 'package:app/components/number_seven.dart';
-import 'package:app/components/twenty_one.dart';
+import 'package:app/components/number_twenty_five.dart';
+import 'package:app/components/number_twenty_one.dart';
 import 'package:flutter/material.dart';
 
 import 'components/number_fourteen.dart';
@@ -28,7 +29,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Padding(
-            padding: const EdgeInsets.only(top: 50), child: NumberFive()));
+      bottomNavigationBar: NumberTwentyFive(),
+    );
   }
 }
