@@ -5,8 +5,8 @@ import 'package:app/components/number_six.dart';
 import 'package:app/components/number_seven.dart';
 import 'package:app/components/number_twenty_five.dart';
 import 'package:app/components/number_twenty_one.dart';
+import 'package:app/pages/friends_chat.dart';
 import 'package:flutter/material.dart';
-
 import 'components/number_fourteen.dart';
 
 void main() {
@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: NumberTwentyFive(),
+      body: FriendsChat(),
     );
   }
 }
