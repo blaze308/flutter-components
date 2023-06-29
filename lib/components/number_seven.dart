@@ -27,9 +27,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-          padding: const EdgeInsets.only(top: 5),
-          height: 90,
-          color: Colors.white,
+          padding: const EdgeInsets.only(top: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
@@ -58,13 +56,16 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                         children: [
                           Icon(Icons.search, size: 30),
                           SizedBox(width: 10),
-                          badges.Badge(
-                              badgeContent: Text("3",
-                                  style: TextStyle(color: Colors.white)),
-                              badgeStyle: badges.BadgeStyle(
-                                  badgeColor: Color(0xffEB5757)),
-                              child: Icon(Icons.monetization_on_outlined,
-                                  size: 27)),
+                          SizedBox(
+                            width: 20,
+                            child: badges.Badge(
+                                badgeContent: Text("3",
+                                    style: TextStyle(color: Colors.white)),
+                                badgeStyle: badges.BadgeStyle(
+                                    badgeColor: Color(0xffEB5757)),
+                                child: Icon(Icons.monetization_on_outlined,
+                                    size: 27)),
+                          ),
                           SizedBox(width: 10),
                           Icon(Icons.more_vert, size: 27)
                         ]),
@@ -103,7 +104,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size(double.maxFinite, 80);
+  Size get preferredSize => const Size(double.maxFinite, 90);
 }
 
 follow() {

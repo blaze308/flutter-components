@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NumberFive extends StatelessWidget {
-  const NumberFive({super.key});
+class NumeroFour extends StatelessWidget {
+  const NumeroFour({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,12 +40,20 @@ class NumberFive extends StatelessWidget {
                                   fontWeight: FontWeight.w300, fontSize: 13)),
                         ),
                       ]),
-                  const Row(children: [
-                    Text("Today",
-                        style: TextStyle(fontWeight: FontWeight.w300)),
-                    SizedBox(width: 5),
-                    Icon(Icons.arrow_forward_ios, size: 13)
-                  ]),
+                  const Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Row(children: [
+                        Text("Today",
+                            style: TextStyle(fontWeight: FontWeight.w300)),
+                        SizedBox(width: 5),
+                        Icon(Icons.arrow_forward_ios, size: 13),
+                      ]),
+                      SizedBox(height: 30),
+                      Icon(Icons.people_outline_outlined,
+                          color: Colors.grey, size: 25)
+                    ],
+                  )
                 ]),
             const MyDivider(),
           ],

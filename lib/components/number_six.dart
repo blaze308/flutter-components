@@ -9,7 +9,7 @@ class NumberSix extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        Container(
+        SizedBox(
           height: 55,
           width: 55,
           child: FittedBox(
@@ -28,7 +28,7 @@ class NumberSix extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10),
-        Container(
+        SizedBox(
           height: 50,
           width: 50,
           child: FittedBox(
@@ -40,7 +40,7 @@ class NumberSix extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10),
-        Container(
+        SizedBox(
           height: 40,
           width: 40,
           child: FittedBox(

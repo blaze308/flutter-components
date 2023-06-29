@@ -59,6 +59,9 @@ class _ComponentTwoState extends State<ComponentTwo> {
                         });
                       },
                     ),
+                    const SizedBox(
+                      width: 43,
+                    ),
                   ],
                 ),
               )),

@@ -1,8 +1,12 @@
 import 'package:app/components/number_five.dart';
 import 'package:app/components/number_six.dart';
 import 'package:app/components/number_twenty_five.dart';
+import 'package:app/components/others/appbar.dart';
+import 'package:app/components/others/friends_appbar.dart';
+import 'package:app/components/others/number_four.dart';
 import 'package:app/components/others/number_one.dart';
 import 'package:app/components/others/number_two.dart';
+import 'package:app/components/others/numero_four.dart';
 import 'package:flutter/material.dart';
 
 class FriendsChat extends StatefulWidget {
@@ -16,9 +20,10 @@ class _FriendsChatState extends State<FriendsChat> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: ComponentOne(),
+      appBar: const FriendsAppBar(),
       body: ListView(
-        children: [
+        children: const [
+          NumeroFour(),
           NumberFive(),
           NumberFive(),
           NumberFive(),
