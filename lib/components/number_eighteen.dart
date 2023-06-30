@@ -22,16 +22,16 @@ class NumberEighteen extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                     color: Color(0xff3C3C43)))
           ]),
-          Column(
+          const Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Container(
+              SizedBox(
                   width: 200,
-                  child: const Text(
+                  child: Text(
                       "Fine looking jacket from Paco Rabane. Hottest trend for upcoming summer 2018.",
                       style: TextStyle(color: Colors.black, fontSize: 15))),
-              const Text(
+              Text(
                 "GHC 890000000.95",
                 style: TextStyle(color: Color(0xff3B03DB)),
               )

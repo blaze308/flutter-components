@@ -8,7 +8,7 @@ class FriendsAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return const SizedBox(
       child:
           Column(children: [ComponentOne(), ComponentTwo(), ComponentThree()]),
     );

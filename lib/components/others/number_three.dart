@@ -7,7 +7,6 @@ class ComponentThree extends StatefulWidget implements PreferredSizeWidget {
   State<ComponentThree> createState() => _ComponentThreeState();
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => const Size(double.maxFinite, 120);
 }
 

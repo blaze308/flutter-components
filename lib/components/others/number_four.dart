@@ -24,10 +24,10 @@ class ComponentFour extends StatelessWidget {
                 backgroundImage: NetworkImage(
                     'https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=740&t=st=1688051726~exp=1688052326~hmac=c80c43d4f9b13d9616a1094e963125b7cca014978eb63c7d86a7405624b26a09'),
               ),
-              SizedBox(width: 10),
+              const SizedBox(width: 10),
               Container(
                 color: Colors.white,
-                padding: EdgeInsets.only(right: 10),
+                padding: const EdgeInsets.only(right: 10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -82,8 +82,8 @@ class ComponentFour extends StatelessWidget {
               size: 25,
             ),
           ),
-          SizedBox(height: 5),
-          MyDivider()
+          const SizedBox(height: 5),
+          const MyDivider()
         ],
       ),
     );

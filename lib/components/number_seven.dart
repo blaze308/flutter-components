@@ -108,5 +108,5 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 }
 
 follow() {
-  print("follow");
+  // print("follow");
 }

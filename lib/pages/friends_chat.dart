@@ -1,11 +1,9 @@
 import 'package:app/components/number_five.dart';
 import 'package:app/components/number_six.dart';
 import 'package:app/components/number_twenty_five.dart';
-import 'package:app/components/others/appbar.dart';
+
 import 'package:app/components/others/friends_appbar.dart';
-import 'package:app/components/others/number_four.dart';
-import 'package:app/components/others/number_one.dart';
-import 'package:app/components/others/number_two.dart';
+
 import 'package:app/components/others/numero_four.dart';
 import 'package:flutter/material.dart';
 
@@ -36,8 +34,8 @@ class _FriendsChatState extends State<FriendsChat> {
           NumberFive(),
         ],
       ),
-      floatingActionButton: NumberSix(),
-      bottomNavigationBar: NumberTwentyFive(),
+      floatingActionButton: const NumberSix(),
+      bottomNavigationBar: const NumberTwentyFive(),
     );
   }
 }
