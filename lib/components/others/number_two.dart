@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+import 'package:app/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class ComponentTwo extends StatefulWidget {
@@ -115,8 +116,8 @@ class SubNavText extends StatelessWidget {
           onTap: onTap,
           child: Text(
             text,
-            style: const TextStyle(
-              fontSize: 16,
+            style: TextStyle(
+              fontSize: Sizes.fontSixteen,
               color: Colors.white,
               fontWeight: FontWeight.w500,
             ),

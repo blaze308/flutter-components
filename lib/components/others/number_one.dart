@@ -1,3 +1,4 @@
+import 'package:app/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
 
@@ -23,21 +24,21 @@ class ComponentOne extends StatelessWidget implements PreferredSizeWidget {
                     ]),
                     shape: BoxShape.circle,
                   ),
-                  child: const Text(
+                  child: Text(
                     'NA',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 25,
+                      fontSize: Sizes.fontTwenty,
                     ),
                   ),
                 ),
                 const SizedBox(
                   width: 20,
                 ),
-                const Text(
+                Text(
                   'Let\'s Roll',
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: Sizes.fontTwenty,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -48,10 +49,10 @@ class ComponentOne extends StatelessWidget implements PreferredSizeWidget {
               children: [
                 InkWell(
                   onTap: () {},
-                  child: const Icon(
+                  child: Icon(
                     Icons.search,
                     color: Color(0xFF5F5F5F),
-                    size: 27,
+                    size: Sizes.iconSearch,
                   ),
                 ),
                 const SizedBox(
@@ -60,10 +61,10 @@ class ComponentOne extends StatelessWidget implements PreferredSizeWidget {
                 SizedBox(
                   width: 20,
                   child: badges.Badge(
-                    badgeContent: const Text(
+                    badgeContent: Text(
                       '3',
                       style: TextStyle(
-                        fontSize: 8,
+                        fontSize: Sizes.fontEight,
                         color: Colors.white,
                       ),
                     ),
@@ -71,10 +72,10 @@ class ComponentOne extends StatelessWidget implements PreferredSizeWidget {
                         const badges.BadgeStyle(badgeColor: Color(0xFFEB5757)),
                     child: InkWell(
                       onTap: () {},
-                      child: const Icon(
+                      child: Icon(
                         Icons.request_page_outlined,
                         color: Colors.black,
-                        size: 27,
+                        size: Sizes.iconRequestPage,
                       ),
                     ),
                   ),
@@ -84,10 +85,10 @@ class ComponentOne extends StatelessWidget implements PreferredSizeWidget {
                 ),
                 InkWell(
                   onTap: () {},
-                  child: const Icon(
+                  child: Icon(
                     Icons.more_vert,
                     color: Colors.black,
-                    size: 27,
+                    size: Sizes.iconMoreVert,
                   ),
                 ),
               ],

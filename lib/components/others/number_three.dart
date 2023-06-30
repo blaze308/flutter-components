@@ -1,3 +1,4 @@
+import 'package:app/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class ComponentThree extends StatefulWidget implements PreferredSizeWidget {
@@ -21,7 +22,7 @@ class _ComponentThreeState extends State<ComponentThree> {
             Container(
               height: 30,
               clipBehavior: Clip.hardEdge,
-              width: MediaQuery.of(context).size.width,
+              width: Sizes.screenWidth,
               decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                   color: Colors.white,
@@ -104,8 +105,8 @@ class MenuText extends StatelessWidget {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
       child: Text(
         menuText,
-        style: const TextStyle(
-          fontSize: 14,
+        style: TextStyle(
+          fontSize: Sizes.fontFourteen,
           fontWeight: FontWeight.w400,
         ),
       ),
